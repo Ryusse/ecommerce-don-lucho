@@ -1,0 +1,63 @@
+.BlueTitulo{
+	text-decoration: none;
+	color: #0d134e;
+	text-align: center;
+}
+.BlueTitulo2{
+	text-decoration: none;
+	color: #0d134e;
+}
+.GrisTexto{
+	text-decoration: none;
+	color: #adb1c4;
+}
+.BluePrecio{
+    text-decoration: none;
+	color: #151875;
+	text-align: center;
+}
+.BluePrecio2{
+    text-decoration: none;
+	color: #151875;
+}
+.espacio{
+   text-decoration: none;
+   color: #E5E5E5;
+}
+
+
+
+body{
+	background: #E5E5E5;
+}
+
+.detalle{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.item-detalle{
+	flex-basis: calc(50% - 50px);
+}
+
+.formato{
+	text-align: center;
+	color: #0d134e;
+}
+.item-producto img{
+	width: 230px;
+	height: 300px;
+	border-radius: 30px
+}
+.item-producto {
+	flex-basis: calc(20% - 70px);
+	background: #FFFFFF;
+}
+.lienzo{
+    background-color: #E5E5E5;
+    width: 350px;
+}
+p span {
+  display: block;
+}
