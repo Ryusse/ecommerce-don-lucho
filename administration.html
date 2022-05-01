@@ -1,173 +1,192 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Vista de administrador</title>
-</head>
-<body style="margin: 0;">
-	<h1 align="center">Módulo de administración</h1>
-	<section>
-		<h2>Operaciones a realizar:</h2>
-		<details>	
-				<summary>Agregar</summary>
-				<form>	
-					<fieldset>
-						<label for="id_producto">Id producto</label>
-						<input type="text" id="id_producto" name="id_producto">
-						<label for="descripcion">Descripción</label>
-						<input type="text" id="descripcion" name="descripcion">
-						<label for="categoria">Categoría</label>
-						<select id="categoria">	
-							<option value="Brandy">Brandy</option>
-							<option value="Champaña">Champaña</option>
-							<option value="Espirituosas">Espirituosas</option>
-							<option value="Ginebra">Ginebra</option>
-							<option value="Ron">Ron</option>
-							<option value="Vino">Vino</option>
-							<option value="Vodka">Vodka</option>
-						</select>
-						<label for="marca">Marca</label>
-						<select id="marca">
-							<option value="Absolut">Absolut</option>
-							<option value="Baileys">Baileys</option>
-							<option value="Barefoot_Wine">Barefoot Wine</option>
-							<option value="Cacique">Cacique</option>
-							<option value="Captain_Morgan">Captain Morgan</option>
-							<option value="E&J_Brandy">E&J Brandy</option>
-							<option value="Jack_Daniel’s">Jack Daniel’s</option>
-							<option value="Jim_Beam">Jim Beam</option>
-							<option value="Malibú">Malibú</option>
-							<option value="Martell">Martell</option>
-							<option value="Mumm">Mumm</option>
-							<option value="Svedka">Svedka</option>
-							<option value="Veuve_Clicquot">Veuve Clicquot</option>
-							<option value="Yellowtail">Yellowtail</option>
-						</select>
-						<label for="id_producto">Precio</label>
-						<input type="number" min="0" id="id_producto" name="id_producto"><br><br>
-						<input type="submit"value="Aceptar">
-						
-					</fieldset>
-				</form>
-		</details>
-		<details>	
-				<summary>Modificar</summary>
-				<form>	
-					<fieldset>
-						<label for="descripcion">Descripción</label>
-						<input type="text" id="descripcion" name="descripcion">
-						<label for="categoria">Categoría</label>
-						<select id="categoria">	
-							<option value="whisky">Whisky</option>
-							<option value="Brandy">Brandy</option>
-							<option value="Champaña">Champaña</option>
-							<option value="Espirituosas">Espirituosas</option>
-							<option value="Ginebra">Ginebra</option>
-							<option value="Ron">Ron</option>
-							<option value="Vino">Vino</option>
-							<option value="Vodka">Vodka</option>
-						</select>
-						<label for="marca">Marca</label>
-						<select id="marca">
-							<option value="Absolut">Absolut</option>
-							<option value="Baileys">Baileys</option>
-							<option value="Barefoot_Wine">Barefoot Wine</option>
-							<option value="Cacique">Cacique</option>
-							<option value="Captain_Morgan">Captain Morgan</option>
-							<option value="E&J_Brandy">E&J Brandy</option>
-							<option value="Jack_Daniel’s">Jack Daniel’s</option>
-							<option value="Jim_Beam">Jim Beam</option>
-							<option value="Malibú">Malibú</option>
-							<option value="Martell">Martell</option>
-							<option value="Mumm">Mumm</option>
-							<option value="Svedka">Svedka</option>
-							<option value="Veuve_Clicquot">Veuve Clicquot</option>
-							<option value="Yellowtail">Yellowtail</option>
-						</select>
-						<label for="id_producto">Precio</label>
-						<input type="number" min="0" id="id_producto" name="id_producto"><br><br>
-						<input type="submit"value="Aceptar">
-						<input  type="reset" value="Cancelar">
-					</fieldset>
-				</form>
-		</details>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Vista de administrador</title>
+  </head>
+  <body style="margin: 0">
+    <header class="header">
+      <div class="header-container max-width">
+        <div class="header-column">
+          <a class="logo" href="./index.html"><img src="./assets/iconos/logo.svg" alt="logo" /></a>
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li><a class="navbar-link" href="./index.html">Inicio</a></li>
+              <li><a class="navbar-link" href="./ListaDeProductos.html">Productos</a></li>
+              <li><a class="navbar-link" href="./SobreNosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-column">
+          <a href="./CarritoDeCompras.html"><img src="./assets/iconos/carrito.svg" alt="carrito" /></a>
+          <a class="button button-primary" href="./Login.html">Ingresar</a>
+        </div>
+      </div>
+    </header>
+    <h1 align="center">Módulo de administración</h1>
+    <section>
+      <h2>Operaciones a realizar:</h2>
+      <details>
+        <summary>Agregar</summary>
+        <form>
+          <fieldset>
+            <label for="id_producto">Id producto</label>
+            <input type="text" id="id_producto" name="id_producto" />
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion" />
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+              <option value="Brandy">Brandy</option>
+              <option value="Champaña">Champaña</option>
+              <option value="Espirituosas">Espirituosas</option>
+              <option value="Ginebra">Ginebra</option>
+              <option value="Ron">Ron</option>
+              <option value="Vino">Vino</option>
+              <option value="Vodka">Vodka</option>
+            </select>
+            <label for="marca">Marca</label>
+            <select id="marca">
+              <option value="Absolut">Absolut</option>
+              <option value="Baileys">Baileys</option>
+              <option value="Barefoot_Wine">Barefoot Wine</option>
+              <option value="Cacique">Cacique</option>
+              <option value="Captain_Morgan">Captain Morgan</option>
+              <option value="E&J_Brandy">E&J Brandy</option>
+              <option value="Jack_Daniel’s">Jack Daniel’s</option>
+              <option value="Jim_Beam">Jim Beam</option>
+              <option value="Malibú">Malibú</option>
+              <option value="Martell">Martell</option>
+              <option value="Mumm">Mumm</option>
+              <option value="Svedka">Svedka</option>
+              <option value="Veuve_Clicquot">Veuve Clicquot</option>
+              <option value="Yellowtail">Yellowtail</option>
+            </select>
+            <label for="id_producto">Precio</label>
+            <input type="number" min="0" id="id_producto" name="id_producto" /><br /><br />
+            <input type="submit" value="Aceptar" />
+            <input type="reset" value="Cancelar" />
+          </fieldset>
+        </form>
+      </details>
+      <details>
+        <summary>Modificar</summary>
+        <form>
+          <fieldset>
+            <label for="descripcion">Descripción</label>
+            <input type="text" id="descripcion" name="descripcion" />
+            <label for="categoria">Categoría</label>
+            <select id="categoria">
+              <option value="whisky">Whisky</option>
+              <option value="Brandy">Brandy</option>
+              <option value="Champaña">Champaña</option>
+              <option value="Espirituosas">Espirituosas</option>
+              <option value="Ginebra">Ginebra</option>
+              <option value="Ron">Ron</option>
+              <option value="Vino">Vino</option>
+              <option value="Vodka">Vodka</option>
+            </select>
+            <label for="marca">Marca</label>
+            <select id="marca">
+              <option value="Absolut">Absolut</option>
+              <option value="Baileys">Baileys</option>
+              <option value="Barefoot_Wine">Barefoot Wine</option>
+              <option value="Cacique">Cacique</option>
+              <option value="Captain_Morgan">Captain Morgan</option>
+              <option value="E&J_Brandy">E&J Brandy</option>
+              <option value="Jack_Daniel’s">Jack Daniel’s</option>
+              <option value="Jim_Beam">Jim Beam</option>
+              <option value="Malibú">Malibú</option>
+              <option value="Martell">Martell</option>
+              <option value="Mumm">Mumm</option>
+              <option value="Svedka">Svedka</option>
+              <option value="Veuve_Clicquot">Veuve Clicquot</option>
+              <option value="Yellowtail">Yellowtail</option>
+            </select>
+            <label for="id_producto">Precio</label>
+            <input type="number" min="0" id="id_producto" name="id_producto" /><br /><br />
+            <input type="submit" value="Aceptar" />
+            <input type="reset" value="Cancelar" />
+          </fieldset>
+        </form>
+      </details>
 
-		<details>
-			<summary>Eliminar</summary>
-			<form>
-				<fieldset>
-					<input placeholder="id producto a eliminar" type="text" name="busqueda"><input type="button" name="buscar" value="Eliminar">
-				</fieldset>
-			</form>
-		</details>
-		<br>
-		<fieldset >
-			<summary>Filtrar</summary>
-		<input type="text" name="busqueda"><input type="button" name="buscar" value="Aceptar">
-		</fieldset>
-		<table  width="100%" border="1" style="text-align: center;">
-			<tr>
-				<th >Id producto</th>
-				<th>Descripción</th>
-				<th>Categoría</th>
-				<th>Marca</th>
-				<th>Precio</th>
-			</tr>
-			<tr style="height:20px;">
-				<td>P0001</td>
-				<td>Unidad 300ml Jack Daniel's</td>
-				<td>Ron</td>
-				<td>Jack Daniel's</td>
-				<td>S/80</td>
-			</tr>
-			<tr style="height:20px;">
-				<td>P0002</td>
-				<td>Unidad 200ml Smirnoff</td>
-				<td>Vodka</td>
-				<td>Smirnoff</td>
-				<td>S/70</td>
-			</tr>
-			<tr style="height:20px;">
-				<td>P0003</td>
-				<td>Unidad 500ml Bacardi</td>
-				<td>Ron</td>
-				<td>Bacardi</td>
-				<td>S/90</td>
-			</tr>
-			<tr style="height:20px;">
-				<td>P0004</td>
-				<td>Unidad 350ml Jägermeister</td>
-				<td>Jägermeister</td>
-				<td>Espirituosas</td>
-				<td>S/50</td>
-			</tr>
-			<tr style="height:20px;">
-				<td>P0005</td>
-				<td>Unidad 800ml Robert Mondavi</td>
-				<td>Vino</td>
-				<td>Robert Mondavi</td>
-				<td>S/120</td>
-			</tr>
-		</table>
-	</section>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<br/>
-	<center>
-		<a href="./index.html">
-			<figure>
-
-				<img width="50px" src="assets/iconos/Home.svg">
-				<figcaption>Volver</figcaption>
-			</figure>
-		</a>
-	</center>
-	<footer style="background-color: black">	
+      <details>
+        <summary>Eliminar</summary>
+        <form>
+          <fieldset><input placeholder="id producto a eliminar" type="text" name="busqueda" /><input type="button" name="buscar" value="Eliminar" /></fieldset>
+        </form>
+      </details>
+      <br />
+      <fieldset>
+        <summary>Filtrar</summary>
+        <input type="text" name="busqueda" /><input type="button" name="buscar" value="Aceptar" />
+      </fieldset>
+      <table width="100%" border="1" style="text-align: center">
+        <tr>
+          <th>Id producto</th>
+          <th>Descripción</th>
+          <th>Categoría</th>
+          <th>Marca</th>
+          <th>Precio</th>
+        </tr>
+        <tr style="height: 20px">
+          <td>P0001</td>
+          <td>Unidad 300ml Jack Daniel's</td>
+          <td>Ron</td>
+          <td>Jack Daniel's</td>
+          <td>S/80</td>
+        </tr>
+        <tr style="height: 20px">
+          <td>P0002</td>
+          <td>Unidad 200ml Smirnoff</td>
+          <td>Vodka</td>
+          <td>Smirnoff</td>
+          <td>S/70</td>
+        </tr>
+        <tr style="height: 20px">
+          <td>P0003</td>
+          <td>Unidad 500ml Bacardi</td>
+          <td>Ron</td>
+          <td>Bacardi</td>
+          <td>S/90</td>
+        </tr>
+        <tr style="height: 20px">
+          <td>P0004</td>
+          <td>Unidad 350ml Jägermeister</td>
+          <td>Jägermeister</td>
+          <td>Espirituosas</td>
+          <td>S/50</td>
+        </tr>
+        <tr style="height: 20px">
+          <td>P0005</td>
+          <td>Unidad 800ml Robert Mondavi</td>
+          <td>Vino</td>
+          <td>Robert Mondavi</td>
+          <td>S/120</td>
+        </tr>
+      </table>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>
+      <a href="./index.html">
+        <figure>
+          <img width="50px" src="assets/iconos/Home.svg" />
+          <figcaption>Volver</figcaption>
+        </figure>
+      </a>
+    </center>
+    <footer style="background-color: black">
       <table style="width: 100%">
         <colgroup>
           <col span="1" style="width: 20%" />
@@ -204,5 +223,5 @@
         </tbody>
       </table>
     </footer>
-</body>
+  </body>
 </html>
