@@ -10,183 +10,115 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Carrito de compras</title>
   </head>
-  <body style="margin: 0; background-color: #eff2f6">
-    <header>
-      <table style="width: 100%">
-        <colgroup>
-          <col span="1" style="width: 20%" />
-          <col span="1" style="width: 60%" />
-          <col span="1" style="width: 20%" />
-        </colgroup>
-
-        <tbody>
-          <tr>
-            <td align="left">
-              <table>
-                <td><a style="color: #000; margin-right: 20px" href="./index.html">Home</a></td>
-                <td><a style="color: #000; margin-right: 20px" href="./ListaDeProductos.html">Productos</a></td>
-                <td><a style="color: #000; margin-right: 20px" href="./SobreNosotros.html">Sobre nosotros</a></td>
-              </table>
-            </td>
-            <td></td>
-            <td align="right">
-              <table>
-                <td>
-                  <a href="./CarritoDeCompras.html"><img src="./assets/iconos/cart.svg" alt="cart" /></a>
-                </td>
-                <td><a href="./Login.html" style="margin-left: 20px">Login</a></td>
-              </table>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <hr />
+  <body>
+    <header class="header">
+      <div class="header-container max-width">
+        <div class="header-column">
+          <a class="logo" href="./index.html"><img src="./assets/iconos/logo.svg" alt="logo" /></a>
+          <nav class="navbar">
+            <ul class="navbar-list">
+              <li><a class="navbar-link" href="./index.html">Inicio</a></li>
+              <li><a class="navbar-link" href="./ListaDeProductos.html">Productos</a></li>
+              <li><a class="navbar-link" href="./SobreNosotros.html">Sobre nosotros</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header-column">
+          <a href="./CarritoDeCompras.html"><img src="./assets/iconos/carrito.svg" alt="carrito" /></a>
+          <a class="button button-primary" href="./Login.html">Ingresar</a>
+        </div>
+      </div>
     </header>
     <main>
-      <h1>Carrito de compras</h1>
-      <hr />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-
-      <table style="width: 100%">
-        <colgroup>
-          <col span="1" style="width: 60%" />
-          <col span="1" style="width: 40%" />
-        </colgroup>
-        <tr>
-          <td>
-            <table>
-              <colgroup>
-                <col span="1" style="width: 40%" />
-                <col span="1" style="width: 15%" />
-                <col span="1" style="width: 15%" />
-                <col span="1" style="width: 15%" />
-                <col span="1" style="width: 15%" />
-              </colgroup>
-              <thead>
-                <tr align="left">
-                  <th>Productos</th>
-                  <th>Precio</th>
-                  <th>Cantidad</th>
-                  <th>Total</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <th><img style="width: 150px" src="./assets/imagenes/VinoMalbec.jpg" alt="producto" /></th>
-                        <th align="left">
-                          <p>Vino Tinto Malbec Marques Del Sur Roble Botella</p>
-                          <p>Estas poseen un color oscuro y abundantes taninos, y se hicieron conocidas por ser una de seis uvas permitidas en las mezclas del vino de Burdeos.</p>
-                        </th>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>S/32</td>
-                  <td>5</td>
-                  <td>S/160</td>
-
-                  <td><img src="./assets/iconos/eliminar.svg" alt="" /></td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <th><img style="width: 150px" src="./assets/imagenes/Cusqueña.jpg" alt="producto" /></th>
-                        <th align="left">
-                          <p>Cerveza Cusqueña Trigo Pack 6 Botellas de 310 ml c/u</p>
-                          <p>Agua, cebadas malteadas (clara y caramelo), trigo malteado, lúpulo y azúcar.</p>
-                        </th>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>S/32</td>
-                  <td>5</td>
-                  <td>S/160</td>
-                  <td><img src="./assets/iconos/eliminar.svg" alt="" /></td>
-                </tr>
-                <tr>
-                  <td>
-                    <table>
-                      <tr>
-                        <th><img style="width: 150px" src="./assets/imagenes/PilsenPack.jpg" alt="producto" /></th>
-                        <th align="left">
-                          <p>Cerveza Pilsen Callao Pack 6 Botellas de 310 ml c/u</p>
-                          <p>Elaborada originalmente en el siglo XIX en la ciudad de Pilsen</p>
-                        </th>
-                      </tr>
-                    </table>
-                  </td>
-                  <td>S/32</td>
-                  <td>5</td>
-                  <td>S/160</td>
-                  <td><img src="./assets/iconos/eliminar.svg" alt="" /></td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-
-          <td align="center">
-            <div align="center" style="width: 50%; height: 200px; background-color: #e6e6e6">
-              <div style="padding-top: 50px">
-                <table style="width: 100%">
-                  <colgroup>
-                    <col span="1" style="width: 60%" />
-                    <col span="1" style="width: 40%" />
-                  </colgroup>
-                  <tbody align="center">
-                    <tr>
-                      <td>Subtotal</td>
-                      <td>S/160</td>
-                    </tr>
-                    <tr>
-                      <td>Total</td>
-                      <td>S/800</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <button style="margin-top: 40px">Proceder al pago</button>
+      <div class="banner">
+        <img src="./assets/imagenes/banner.jpg" alt="banner" />
+        <h1 class="banner-title">Carrito de compras</h1>
+      </div>
+      <div class="max-width">
+        <div class="cart-container">
+          <div class="cart-details">
+            <div class="cart-details-header">
+              <h3 class="cart-title">Producto</h3>
+              <h3 class="cart-title">Precio</h3>
+              <h3 class="cart-title">Cantidad</h3>
+              <h3 class="cart-title">Total</h3>
             </div>
-          </td>
-        </tr>
-      </table>
+            <div class="cart-content">
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <div class="cart-product">
+                    <figure class="cart-product-image">
+                      <img src="./assets/imagenes/Cusqueña.jpg" alt="item" />
+                    </figure>
+                    <div>
+                      <h3>Titulo producto</h3>
+                      <p>descripcion</p>
+                    </div>
+                  </div>
+                  <p>$32</p>
+                  <p>1</p>
+                  <p>$219</p>
+                </li>
+                <li class="cart-item">
+                  <div class="cart-product">
+                    <figure class="cart-product-image">
+                      <img src="./assets/imagenes/Cusqueña.jpg" alt="item" />
+                    </figure>
+                    <div>
+                      <h3>Titulo producto</h3>
+                      <p>descripcion</p>
+                    </div>
+                  </div>
+                  <p>$32</p>
+                  <p>1</p>
+                  <p>$219</p>
+                </li>
+                <li class="cart-item">
+                  <div class="cart-product">
+                    <figure class="cart-product-image">
+                      <img src="./assets/imagenes/Cusqueña.jpg" alt="item" />
+                    </figure>
+                    <div>
+                      <h3>Titulo producto</h3>
+                      <p>descripcion</p>
+                    </div>
+                  </div>
+                  <p>$32</p>
+                  <p>1</p>
+                  <p>$219</p>
+                </li>
+                <li class="cart-item">
+                  <div class="cart-product">
+                    <figure class="cart-product-image">
+                      <img src="./assets/imagenes/Cusqueña.jpg" alt="item" />
+                    </figure>
+                    <div>
+                      <h3>Titulo producto</h3>
+                      <p>descripcion</p>
+                    </div>
+                  </div>
+                  <p>$32</p>
+                  <p>1</p>
+                  <p>$219</p>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-      <h2>Productos relacionados</h2>
-      <div style="text-align: center">
-        <table border="1" style="margin: 0 auto">
-          <tr>
-            <td>
-              <a href="./DetalleProducto.html"><img src="./assets/imagenes/PilsenPack.jpg" width="40% " /></a>
-            </td>
-            <td>
-              <a href="./DetalleProducto.html"><img src="./assets/imagenes/Cusqueña.jpg" width="60% " /></a>
-            </td>
-            <td>
-              <a href="./DetalleProducto.html"><img src="./assets/imagenes/VinoMalbec.jpg" width="50% " /></a>
-            </td>
-            <td>
-              <a href="./DetalleProducto.html"><img src="./assets/imagenes/VinoSantiago.jpg" width="55% " /></a>
-            </td>
-          </tr>
-          <tr>
-            <td>Cerveza Pilsen Callao Pack 6 Botellas de 310 ml c/u</td>
-            <td>Cerveza Cusqueña Trigo Pack 6 Botellas de 310 ml c/u</td>
-            <td>Vino Tinto Malbec Marques Del Sur Roble Botella 750 ml</td>
-            <td>Vino Tinto Santiago Queirolo Magdalena Reserva Semi Seco Botella 750 ml</td>
-          </tr>
-          <tr>
-            <td>S/19.90</td>
-            <td>S/21.90</td>
-            <td>S/18.90</td>
-            <td>S/16.90</td>
-          </tr>
-        </table>
+          <div class="cart-total-container">
+            <h3>Total carrito</h3>
+            <div class="cart-total">
+              <div class="cart-subtotal">
+                <p>Subtotal</p>
+                <p>$219</p>
+              </div>
+              <div class="cart-subtotal">
+                <p>Total</p>
+                <p>$325</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer style="background-color: black">
