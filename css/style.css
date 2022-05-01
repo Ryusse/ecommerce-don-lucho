@@ -1,0 +1,25 @@
+:root {
+  --green: #00ac8c;
+  --red: #cc3768;
+  --grey-900: #fff;
+  --grey-800: #fafafa;
+  --grey-700: #e8e9ec;
+  --grey-600: #adb1c4;
+  --blue-900: #151875;
+  --blue-800: #262a3f;
+  --blue-700: #0d134e;
+
+  --size-h1: 2.5rem;
+  --size-h2: 2rem;
+  --size-h3: 1.25rem;
+  --size-texto: 1rem;
+  --size-texto-avisos: 0.813rem;
+  --size-texto-pequeño: 0.625rem;
+
+  --font-inter: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--font-inter);
+  font-size: 16px;
+}
