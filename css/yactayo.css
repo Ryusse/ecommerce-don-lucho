@@ -1,63 +1,96 @@
-.BlueTitulo{
-	text-decoration: none;
-	color: #0d134e;
-	text-align: center;
+/* .BlueTitulo {
+  text-decoration: none;
+  color: #0d134e;
+  text-align: center;
 }
-.BlueTitulo2{
-	text-decoration: none;
-	color: #0d134e;
+.BlueTitulo2 {
+  text-decoration: none;
+  color: #0d134e;
 }
-.GrisTexto{
-	text-decoration: none;
-	color: #adb1c4;
+.GrisTexto {
+  text-decoration: none;
+  color: #adb1c4;
 }
-.BluePrecio{
-    text-decoration: none;
-	color: #151875;
-	text-align: center;
+.BluePrecio {
+  text-decoration: none;
+  color: #151875;
+  text-align: center;
 }
-.BluePrecio2{
-    text-decoration: none;
-	color: #151875;
+.BluePrecio2 {
+  text-decoration: none;
+  color: #151875;
 }
-.espacio{
-   text-decoration: none;
-   color: #E5E5E5;
-}
-
-
-
-body{
-	background: #E5E5E5;
+.espacio {
+  text-decoration: none;
+  color: #e5e5e5;
 }
 
-.detalle{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.item-detalle {
+  flex-basis: calc(50% - 50px);
 }
 
-.item-detalle{
-	flex-basis: calc(50% - 50px);
+.formato {
+  text-align: center;
+  color: #0d134e;
 }
-
-.formato{
-	text-align: center;
-	color: #0d134e;
-}
-.item-producto img{
-	width: 230px;
-	height: 300px;
-	border-radius: 30px
+.item-producto img {
+  width: 230px;
+  height: 300px;
+  border-radius: 30px;
 }
 .item-producto {
-	flex-basis: calc(20% - 70px);
-	background: #FFFFFF;
+  flex-basis: calc(20% - 70px);
+  background: #ffffff;
 }
-.lienzo{
-    background-color: #E5E5E5;
-    width: 350px;
+ */
+.detalle {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5rem;
 }
-p span {
-  display: block;
+
+.detalle-imagen-contenedor {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.detalle-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detalle-imagen img {
+  width: 18rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.detalle-imagen1 img {
+  width: 6.5rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.detalle-descripcion {
+  max-width: 37rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.compartir {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.compartir-lista {
+  display: flex;
+  gap: 1rem;
+}
+
+.compartir-lista a {
+  width: 1.5rem;
 }

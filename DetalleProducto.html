@@ -6,159 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" type="text/css" href="css/yactayo.css">
+    <link rel="stylesheet" type="text/css" href="css/yactayo.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Detalle de producto</title>
   </head>
   <body>
-    <body style="margin: 0; background-color: #E5E5E5">
-      <header>
-        <table style="width: 100%">
-          <colgroup>
-            <col span="1" style="width: 20%" />
-            <col span="1" style="width: 60%" />
-            <col span="1" style="width: 20%" />
-          </colgroup>
-
-          <tbody>
-            <tr>
-              <td align="left">
-                <table>
-                  <td><a style="color: #000; margin-right: 20px" href="./index.html">Home</a></td>
-                  <td><a style="color: #000; margin-right: 20px" href="./ListaDeProductos.html">Productos</a></td>
-                  <td><a style="color: #000; margin-right: 20px" href="./SobreNosotros.html">Sobre nosotros</a></td>
-                </table>
-              </td>
-              <td></td>
-              <td align="right">
-                <table>
-                  <td>
-                    <a href="./CarritoDeCompras.html"><img src="./assets/iconos/cart.svg" alt="cart" /></a>
-                  </td>
-                  <td><a href="./Login.html" style="margin-left: 20px">Login</a></td>
-                </table>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <hr />
+    <body>
+      <header class="header">
+        <div class="header-container max-width">
+          <div class="header-column">
+            <a class="logo" href="./index.html"><img src="./assets/iconos/logo.svg" alt="logo" /></a>
+            <nav class="navbar">
+              <ul class="navbar-list">
+                <li><a class="navbar-link" href="./index.html">Inicio</a></li>
+                <li><a class="navbar-link" href="./ListaDeProductos.html">Productos</a></li>
+                <li><a class="navbar-link" href="./SobreNosotros.html">Sobre nosotros</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header-column">
+            <a href="./CarritoDeCompras.html"><img src="./assets/iconos/carrito.svg" alt="carrito" /></a>
+            <a class="button button-primary" href="./Login.html">Ingresar</a>
+          </div>
+        </div>
       </header>
 
       <main>
-        <section>
+        <div class="banner">
+          <div class="banner-container max-width">
+            <h1 class="banner-title">Carrito de compras</h1>
+          </div>
+        </div>
+        <section class="max-width section">
           <div class="detalle">
-              <img  class="item-detalle" src="./assets/imagenes/Yactayo/Whisky Green Label Johnnie Walker Botella 750 ml (Engraving Edition) - 214.90.jpg" width="40%" />
-            <div class="item-detalle">
-              <h2 class="formato">Whisky Green Label Johnnie Walker</h2>
-              <div>
-                <p class="BluePrecio2">S/214.90</p>
+            <div class="detalle-imagen-contenedor">
+              <div class="detalle-columna">
+                <figure class="detalle-imagen1">
+                  <img src="./assets/imagenes/Productos/producto1.jpg" alt="producto" />
+                </figure>
+                <figure class="detalle-imagen1">
+                  <img src="./assets/imagenes/Productos/producto1.jpg" alt="producto" />
+                </figure>
+                <figure class="detalle-imagen1">
+                  <img src="./assets/imagenes/Productos/producto1.jpg" alt="producto" />
+                </figure>
               </div>
-              <div>
-                <p class="GrisTexto">Johnnie Walker es una marca de whisky escocés ahora propiedad de Diageo que se originó en la ciudad escocesa de Kilmarnock, East Ayrshire. La marca fue establecida por primera vez por el tendero John Walker. Es la marca de whisky escocés mezclado más ampliamente distribuida en el mundo, vendida en casi todos los países, con ventas anuales equivalentes a más de 223.7 millones de botellas de 700 ml en 2016 (156.6 millones de litros).</p>
-              </div>
-              <div class="BluePrecio2">
-                Categoria Blended
-              </div>
-              <div class="detalle">
-              <p class="BluePrecio2">Compartir</p>
-                <div class="lienzo"></div>
-                <div>
-                   <a href="#" style="margin-right:5px"><img src="./assets/iconos/facebook-compartir.svg" alt="facebook" width="3%" /></a>
-                   <a href="#" style="margin-right: 5px"><img src="./assets/iconos/instagram-compartir.svg" alt="instagram-compartir" width="3%" /></a>
-                   <a href="#" style="margin-right: 5px"><img src="./assets/iconos/twitter.svg" alt="twitter" width="3%" /></a> 
+              <figure class="detalle-imagen">
+                <img src="./assets/imagenes/Productos/producto1.jpg" alt="producto" />
+              </figure>
+            </div>
+            <div class="detalle-descripcion">
+              <h2>Whisky Green Label Johnnie Walker</h2>
+              <p class="texto-normal-2">S/214.90</p>
+
+              <p class="texto-normal-grey">
+                Johnnie Walker es una marca de whisky escocés ahora propiedad de Diageo que se originó en la ciudad escocesa de Kilmarnock, East Ayrshire. La marca fue establecida por primera vez por el tendero John Walker. Es la marca de whisky
+                escocés mezclado más ampliamente distribuida en el mundo, vendida en casi todos los países, con ventas anuales equivalentes a más de 223.7 millones de botellas de 700 ml en 2016 (156.6 millones de litros).
+              </p>
+              <p class="texto-normal-2">Categoria:</p>
+              <div class="compartir">
+                <p class="texto-normal-2">Compartir</p>
+                <div class="compartir-lista">
+                  <a href="#"><img src="./assets/iconos/facebook-compartir.svg" alt="facebook" /></a>
+                  <a href="#"><img src="./assets/iconos/instagram-compartir.svg" alt="instagram" /></a>
+                  <a href="#"><img src="./assets/iconos/twitter.svg" alt="twitter" /></a>
                 </div>
               </div>
+              <a href="#" class="button button-primary">Añadir</a>
             </div>
           </div>
         </section>
-      
-           
-         
-            <p class="espacio">
-              <span>-</span>
-              <span>-</span>
-            </p>
-        <h2 class="BlueTitulo">Productos relacionados</h2>
-            <p class="espacio">
-                  <span>-</span>
-                  <span>-</span>
-            </p>
-        
-          <div class="detalle">
-              <div class="item-producto">
-                <a href="./DetalleProducto.html"><img src="./assets/imagenes/Yactayo/PACK-GIN-BULLDOG-169.90.jpg" width="50% " /></a>
-                <h5 class="GrisTexto">Categoria Americano</h5>
-                <p class="BlueTitulo2">Pack gin bullog</p>
-                <p class="BlueTitulo2">Botella 750 ml</p>
-                <p class="BluePrecio2">S/169.90</p>
-              </div>
-              <div class="item-producto">
-                <a href="./DetalleProducto.html"><img src="./assets/imagenes/Yactayo/vinas-de-oro-ed-peru-productos-ecommerce-licoresmimar-43.90.jpg" /></a>
-                <h5 class="GrisTexto">Categoria Malta</h5>
-                <p class="BlueTitulo2">Vinas de oro</p>
-                <p class="BlueTitulo2">Botella 750 ml</p>
-                <p class="BluePrecio2">S/43.90</p>
-              </div>
-              <div class="item-producto">
-                <a href="./DetalleProducto.html"><img src="./assets/imagenes/Yactayo/Sazerac Straight Rye Whiskey 750 Ml. + Peychaud’s Bitter 5 oz - 159.90.jpg"/></a>
-                <h5 class="GrisTexto">Categoria Irlandes</h5>
-                <p class="BlueTitulo2">Sazerac Straight Rye Whiskey</p>
-                <p class="BlueTitulo2">Botella 750 ml</p>
-                <p class="BluePrecio2">S/159.90</p>
-              </div>
-              <div class="item-producto">
-                <a href="./DetalleProducto.html"><img src="./assets/imagenes/Yactayo/pisco-cuatro-gallos-mosto-verde-quebrata-licoresmimar-62.90.jpg" /></a>
-                <h5 class="GrisTexto">Categoria Español</h5>
-                <p class="BlueTitulo2">Pisco cuatro gallos verde quebrata</p> 
-                <p class="BlueTitulo2">Botella 750 ml</p>
-                <p class="BluePrecio2">S/62.90</p>
-              </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer-container max-width">
+          <div class="footer-column">
+            <a class="footer-logo" href="./index.html"><img src="./assets/iconos/logo2.svg" alt="logo" /></a>
+            <nav class="footer navbar">
+              <ul class="footer-list">
+                <li><a class="footer-link" href="./index.html">Inicio</a></li>
+                <li><a class="footer-link" href="./ListaDeProductos.html">Productos</a></li>
+                <li><a class="footer-link" href="./SobreNosotros.html">Sobre nosotros</a></li>
+              </ul>
+            </nav>
           </div>
-        </main>
-          <p class="espacio">
-            <span>-</span>
-            <span>-</span>
-          </p>
-
-
-
-      <footer style="background-color: black">
-        <table style="width: 100%">
-          <colgroup>
-            <col span="1" style="width: 20%" />
-            <col span="1" style="width: 60%" />
-            <col span="1" style="width: 20%" />
-          </colgroup>
-
-          <tbody>
-            <tr>
-              <td>
-                <p style="color: white">Don Lucho</p>
-                <table>
-                  <td><a style="color: white; margin-right: 20px" href="./index.html">Home</a></td>
-                  <td><a style="color: white; margin-right: 20px" href="./ListaDeProductos.html">Productos</a></td>
-                  <td><a style="color: white; margin-right: 20px" href="./SobreNosotros.html">Sobre nosotros</a></td>
-                </table>
-              </td>
-              <td></td>
-              <td align="right">
-                <table>
-                  <td>
-                    <a href="#" style="margin-right: 20px"><img src="./assets/iconos/facebook.svg" alt="facebook" /></a>
-                  </td>
-                  <td>
-                    <a href="#" style="margin-right: 20px"><img src="./assets/iconos/instagram.svg" alt="instagram" /></a>
-                  </td>
-                  <td>
-                    <a href="#" style="margin-right: 20px"><img src="./assets/iconos/youtube.svg" alt="youtube" /></a>
-                  </td>
-                </table>
-                <p style="color: white">@ 2022 Logo , Todos los derechos reservados</p>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="footer-column">
+            <ul class="footer-list footer-end">
+              <li>
+                <a href="#"><img src="./assets/iconos/facebook.svg" alt="facebook" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/iconos/instagram.svg" alt="instagram" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/iconos/youtube.svg" alt="youtube" /></a>
+              </li>
+            </ul>
+            <p class="footer-copyright">@ 2022 Logo , Todos los derechos reservados</p>
+          </div>
+        </div>
       </footer>
     </body>
   </body>
