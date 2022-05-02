@@ -199,14 +199,14 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10rem;
+  gap: 7rem;
 }
 
 .section-column {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
-  max-width: 34rem;
+  max-width: 25rem;
 }
 
 .section-text {
@@ -315,11 +315,12 @@ h3 {
 .cart-container {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .cart-details-header {
   display: grid;
-  grid-template-columns: 25rem 9.5rem 7.4rem 1fr;
+  grid-template-columns: 20rem 9.5rem 7.4rem 1fr;
   margin-bottom: 4rem;
 }
 
@@ -329,7 +330,7 @@ h3 {
 
 .cart-item {
   display: grid;
-  grid-template-columns: 25rem 9.5rem 7.4rem 1fr;
+  grid-template-columns: 20rem 9.5rem 7.4rem 1fr;
   align-items: center;
   padding: 2rem 0;
   border-bottom: 1px solid var(--grey-700);
@@ -381,7 +382,7 @@ h3 {
 .cart-subtotal {
   display: flex;
   justify-content: space-between;
-  gap: 10rem;
+  gap: 7rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid var(--grey-700);
 }
@@ -451,7 +452,7 @@ h3 {
 .login-column {
   flex-basis: 40%;
   text-align: center;
-  padding: 6rem 4vw;
+  padding: 3rem 4vw;
   display: flex;
   align-items: center;
 }
@@ -497,15 +498,15 @@ h3 {
   width: 20rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .form button {
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .form-title {
-  margin-bottom: 3.75rem;
+  margin-bottom: 2.75rem;
 }
 
 .form-input {
