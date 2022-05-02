@@ -94,6 +94,12 @@ h3 {
   color: var(--blue-700);
 }
 
+.texto-de-avisos-2 {
+  font-size: var(--size-texto-avisos);
+  font-weight: 500;
+  color: var(--blue-700);
+}
+
 .texto-de-avisos-grey {
   font-size: var(--size-texto-avisos);
   color: var(--grey-600);
@@ -511,7 +517,7 @@ h3 {
 
 .form-input {
   outline: none;
-  padding: 1rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 7px;
   border: 1px solid var(--grey-600);
   transition: all 0.3s ease-in-out;
@@ -535,6 +541,76 @@ h3 {
   max-width: 20rem;
 }
 /*Yactayo end*/
+
+/*Hector*/
+.administrator-container {
+  margin: 4rem 0;
+}
+
+.table-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.table-container div {
+  border-bottom: 1px solid var(--grey-600);
+  min-width: auto;
+  width: 16.5%;
+  margin-top: 0.1%;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.administrator-table {
+  border: 1px solid var(--grey-600);
+  border-radius: 6px;
+}
+
+.generic-container {
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid var(--grey-600);
+  border-radius: 6px 6px 0 0;
+}
+
+.administrator-detail {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--grey-600);
+}
+
+.administrator-form {
+  max-width: 30rem;
+  padding: 2.5rem 2rem;
+  padding-right: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.administrator-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  outline: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 7px;
+  border: 1px solid var(--grey-600);
+  transition: all 0.3s ease-in-out;
+}
+
+/*Hector end*/
 
 .footer {
   background-color: var(--blue-700);
