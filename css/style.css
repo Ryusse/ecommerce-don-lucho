@@ -101,7 +101,7 @@ h3 {
 
 .texto-pequeño {
   font-size: var(--size-texto-pequeño);
-  font-weight: 600;
+  font-weight: 500;
   color: var(--grey-600);
 }
 
@@ -442,6 +442,97 @@ h3 {
   width: 1.5rem;
 }
 
+.login-container {
+  display: flex;
+  height: 100vh;
+  background-color: var(--grey-800);
+}
+
+.login-column {
+  flex-basis: 40%;
+  text-align: center;
+  padding: 6rem 4vw;
+  display: flex;
+  align-items: center;
+}
+
+.login-content {
+  background-color: var(--grey-800);
+  border-radius: 1rem;
+
+  margin: auto;
+}
+
+.login-image {
+  display: grid;
+  place-content: center start;
+  flex-basis: 60%;
+  background: url(../assets/imagenes/login-image.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.login-title {
+  color: var(--grey-800);
+  margin-left: 6rem;
+  max-width: 22rem;
+}
+
+.login-navbar {
+  position: absolute;
+  bottom: 6rem;
+  margin-left: 6rem;
+}
+
+.login-list {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.login-link {
+  color: var(--grey-800);
+}
+
+.form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form button {
+  margin: 2.5rem 0;
+}
+
+.form-title {
+  margin-bottom: 3.75rem;
+}
+
+.form-input {
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 7px;
+  border: 1px solid var(--grey-600);
+  transition: all 0.3s ease-in-out;
+}
+
+.form-input:hover {
+  border: 1px solid var(--blue-800);
+}
+
+.form-input::placeholder {
+  transition: all 0.3s ease-in-out;
+  font-size: var(--texto-normal);
+  color: var(--grey-600);
+}
+
+.form-input:hover::placeholder {
+  color: var(--blue-800);
+}
+
+.width-100 {
+  max-width: 20rem;
+}
 /*Yactayo end*/
 
 .footer {
