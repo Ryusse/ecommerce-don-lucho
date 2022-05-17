@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--blue-700);
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-end {
+  margin-left: auto;
+}
+
+.footer-link {
+  color: var(--grey-600);
+}
+
+.footer-link:hover {
+  color: var(--grey-800);
+}
+
+.footer-copyright {
+  color: var(--grey-600);
+}

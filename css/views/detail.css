@@ -1,0 +1,51 @@
+.detalle {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 5rem;
+}
+
+.detalle-imagen-contenedor {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.detalle-columna {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.detalle-imagen img {
+  width: 18rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.detalle-imagen1 img {
+  width: 6.5rem;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.detalle-descripcion {
+  max-width: 37rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.compartir {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.compartir-lista {
+  display: flex;
+  gap: 1rem;
+}
+
+.compartir-lista a {
+  width: 1.5rem;
+}

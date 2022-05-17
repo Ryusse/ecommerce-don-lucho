@@ -1,0 +1,31 @@
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+}
+
+.section-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  max-width: 31rem;
+}
+
+.section-text {
+  margin-bottom: 3rem;
+}
+
+.section-image-container img {
+  max-width: 28rem;
+  height: 28rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.product-list {
+  margin-top: 5.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.8rem, 1fr));
+  gap: 2rem;
+}

@@ -1,0 +1,53 @@
+.feature-list {
+  margin-top: 5.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.75rem;
+}
+
+.feature-card {
+  max-width: 14.8rem;
+  height: 23rem;
+  padding: 2rem 1.6rem;
+  background-color: var(--grey-900);
+  border-radius: 10px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image {
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.feature-image img {
+  object-fit: cover;
+}
+
+.feature-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.review-card {
+  max-width: 24rem;
+  margin: 9rem auto;
+}
+
+.review-image {
+  width: 6.25rem;
+  margin: auto;
+}
+
+.review-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.review-content p {
+  margin-top: 1rem;
+}

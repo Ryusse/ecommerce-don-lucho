@@ -1,0 +1,15 @@
+.banner {
+  background: url(../../assets/imagenes/banner.jpg) no-repeat center;
+  background-size: cover;
+  height: 13rem;
+}
+
+.banner-container {
+  height: 100%;
+  display: grid;
+}
+
+.banner-title {
+  color: var(--grey-800);
+  align-self: center;
+}

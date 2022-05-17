@@ -1,0 +1,134 @@
+:root {
+  --green: #00ac8c;
+  --red: #cc3768;
+  --grey-900: #fff;
+  --grey-800: #fafafa;
+  --grey-700: #e8e9ec;
+  --grey-600: #adb1c4;
+  --blue-900: #151875;
+  --blue-800: #262a3f;
+  --blue-700: #0d134e;
+
+  --size-h1: 2.5rem;
+  --size-h2: 2rem;
+  --size-h3: 1.25rem;
+  --size-texto-normal: 1rem;
+  --size-texto-avisos: 0.913rem;
+  --size-texto-pequeño: 0.925rem;
+  --font-inter: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter);
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+p {
+  line-height: 1.6;
+}
+
+main {
+  background-color: var(--grey-800);
+}
+
+h1 {
+  font-size: var(--size-h1);
+  color: var(--blue-700);
+}
+
+h2 {
+  font-size: var(--size-h2);
+  color: var(--blue-700);
+}
+
+h3 {
+  font-size: var(--size-h3);
+  color: var(--blue-700);
+}
+
+.texto-normal-2 {
+  font-size: var(--size-texto-normal);
+  font-weight: 600;
+  color: var(--blue-900);
+}
+
+.texto-normal-2-dark-blue {
+  font-size: var(--size-texto-normal);
+  font-weight: 600;
+  color: var(--blue-800);
+}
+
+.texto-normal {
+  font-size: var(--size-texto-normal);
+  color: var(--blue-700);
+}
+
+.texto-normal-grey {
+  font-size: var(--size-texto-normal);
+  color: var(--grey-600);
+}
+
+.texto-de-avisos {
+  font-size: var(--size-texto-avisos);
+  font-weight: 600;
+  color: var(--blue-700);
+}
+
+.texto-de-avisos-2 {
+  font-size: var(--size-texto-avisos);
+  font-weight: 500;
+  color: var(--blue-700);
+}
+
+.texto-de-avisos-grey {
+  font-size: var(--size-texto-avisos);
+  color: var(--grey-600);
+}
+
+.texto-pequeño {
+  font-size: var(--size-texto-pequeño);
+  font-weight: 500;
+  color: var(--grey-600);
+}
+
+.max-width {
+  padding: 2rem 5vw;
+  max-width: 1340px;
+  margin: auto;
+}
+
+.section {
+  padding: 6.25rem 0;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.width-100 {
+  max-width: 20rem;
+}

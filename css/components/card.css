@@ -1,0 +1,29 @@
+.card {
+  background-color: var(--grey-900);
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+}
+
+.card-container-image {
+  padding: 1.25rem;
+  display: grid;
+  place-content: center;
+}
+
+.card-container-image img {
+  object-fit: cover;
+  max-width: 10rem;
+  height: 12rem;
+}
+
+.card-content {
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  height: 5.5rem;
+}
