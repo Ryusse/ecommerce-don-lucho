@@ -130,5 +130,5 @@ h3 {
 }
 
 .width-100 {
-  max-width: 20rem;
+  max-width: 100% !important;
 }

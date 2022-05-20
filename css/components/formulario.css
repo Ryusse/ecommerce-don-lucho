@@ -6,12 +6,14 @@
   gap: 1rem;
 }
 
-.form button {
-  margin: 1.5rem 0;
+.form-control {
+  display: grid;
+  gap: 0.5rem;
 }
 
-.form-title {
-  margin-bottom: 2.75rem;
+.form-control-input {
+  position: relative;
+  display: grid;
 }
 
 .form-input {
@@ -22,7 +24,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.form-input:hover {
+.form-input:hover,
+.form-input:focus {
   border: 1px solid var(--blue-800);
 }
 
@@ -32,6 +35,99 @@
   color: var(--grey-600);
 }
 
-.form-input:hover::placeholder {
-  color: var(--blue-800);
+.form-error,
+.form-check {
+  display: none;
+  width: 1rem;
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
+
+.form-status-enabled {
+  display: block;
+}
+
+.form-status-disabled {
+  display: none;
+}
+
+.form-input-error {
+  color: var(--red);
+  text-align: end;
+  display: none;
+}
+
+.form-input-error-active {
+  display: block;
+}
+
+.form-successful-message {
+  display: none;
+  color: var(--green);
+}
+
+.form-successful-message-active {
+  display: block;
+}
+
+.form-error-message {
+  display: none;
+  color: var(--red);
+}
+
+.form-error-message-active {
+  display: block;
+}
+
+.form-control-correct .form-error {
+  display: block;
+  color: var(--green);
+}
+.form-control-correct .form-validation {
+  color: var(--green);
+}
+
+.form-control-correct .form-input {
+  border: 0.11rem solid var(--green);
+}
+
+.form-control-incorrect .form-error {
+  display: block;
+  color: var(--red);
+}
+
+.form-control-incorrect .form-input {
+  border: 0.11rem solid var(--red);
+}
+
+/* .form button { */
+/* margin: 1.5rem 0; */
+/* } */
+
+/* .form-title { */
+/* margin-bottom: 2.75rem; */
+/* } */
+
+/* .form-input { */
+/* outline: none; */
+/* padding: 0.8rem 1.5rem; */
+/* border-radius: 7px; */
+/* border: 1px solid var(--grey-600); */
+/* transition: all 0.3s ease-in-out; */
+/* } */
+
+/* .form-input:hover { */
+/* border: 1px solid var(--blue-800); */
+/* } */
+
+/* .form-input::placeholder { */
+/* transition: all 0.3s ease-in-out; */
+/* font-size: var(--texto-normal); */
+/* color: var(--grey-600); */
+/* } */
+
+/* .form-input:hover::placeholder { */
+/* color: var(--blue-800); */
+/* } */

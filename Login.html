@@ -14,22 +14,24 @@
     <div class="login-container">
       <div class="login-column">
         <div class="login-content">
-          <h2 class="form-title">Iniciar sesión</h2>
+          <h2 class="login-title-form">Iniciar sesión</h2>
           <form class="form" action="">
             <div class="form-control" id="email-control">
               <div class="form-control-input">
                 <input class="form-input" id="email" name="email" type="email" placeholder="Ingrese su email" required />
-                <i class="form-error fas fa-times-circle"></i>
+                <img class="form-error" src="./assets/iconos/error.svg" />
+                <img class="form-check" src="./assets/iconos/check.svg" />
               </div>
-              <small class="form-input-error">Looks like this is not an email</small>
+              <small class="form-input-error">Campo requerido</small>
             </div>
 
             <div class="form-control" id="password-control">
               <div class="form-control-input">
                 <input class="form-input" id="password" name="password" type="password" placeholder="Ingrese su contraseña" required />
-                <i class="form-error fas fa-times-circle"></i>
+                <img class="form-error" src="./assets/iconos/error.svg" />
+                <img class="form-check" src="./assets/iconos/check.svg" />
               </div>
-              <small class="form-input-error">Password cannot be empty</small>
+              <small class="form-input-error">Campo requerido</small>
             </div>
 
             <button class="button button-primary width-100" type="submit">Ingresar</button>

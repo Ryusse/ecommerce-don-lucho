@@ -4,6 +4,10 @@
   background-color: var(--grey-800);
 }
 
+.login-title-form {
+  margin-bottom: 2rem;
+}
+
 .login-column {
   flex-basis: 40%;
   text-align: center;
