@@ -1,5 +1,5 @@
 import { Regex } from './regex.js'
-import { loader } from '../js/loader.js'
+import { loader } from './loader.js'
 
 const form = document.getElementById('form')
 const inputs = document.querySelectorAll('.form input')
