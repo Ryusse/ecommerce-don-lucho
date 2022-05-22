@@ -10,19 +10,48 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Registro</title>
   </head>
+
   <body>
-    <div class="login-container">
+    <div id="loader"></div>
+    <main class="login-container">
       <div class="login-column">
         <div class="login-content">
-          <h2 class="form-title">Registrate</h2>
-          <form class="form" action="">
-            <input class="form-input" type="email" placeholder="Ingrese su email" required />
-            <input class="form-input" type="text" placeholder="Ingrese su usuario" required />
-            <input class="form-input" type="password" placeholder="Ingrese su contraseña" required />
-            <button class="button button-primary width-100" type="submit">Registrarse</button>
-            <a class="texto-pequeño" href="./Login.html">Ya tienes cuenta? , inicia sesión</a>
+          <h2 class="login-title-form">Registrate</h2>
+          <form class="form" action="" id="form">
+            <div class="form-control" id="email-control">
+              <div class="form-control-input">
+                <input class="form-input" id="email" name="email" type="email" placeholder="Ingrese su email" />
+                <img class="form-error" src="./assets/iconos/error.svg" />
+                <img class="form-check" src="./assets/iconos/check.svg" />
+              </div>
+              <small class="form-input-error">Formato incorrecto</small>
+            </div>
 
-            <a class="texto-pequeño" href="./administration.html">Ingreso como administrador</a>
+            <div class="form-control" id="fullname-control">
+              <div class="form-control-input">
+                <input class="form-input" id="fullname" name="fullname" type="text" placeholder="Ingrese su nombre" />
+                <img class="form-error" src="./assets/iconos/error.svg" />
+                <img class="form-check" src="./assets/iconos/check.svg" />
+              </div>
+              <small class="form-input-error">Ingrese al menos 8 caracteres</small>
+            </div>
+
+            <div class="form-control" id="password-control">
+              <div class="form-control-input">
+                <input class="form-input" id="password" name="password" type="password" placeholder="Ingrese su contraseña" />
+                <img class="form-error" src="./assets/iconos/error.svg" />
+                <img class="form-check" src="./assets/iconos/check.svg" />
+              </div>
+              <small class="form-input-error">Debe contener mayúsculas y almenos un número</small>
+            </div>
+
+            <div class="form-button-container">
+              <button class="button button-primary width-100" type="submit">Ingresar</button>
+              <small class="form-submit-message">Rellene los campos</small>
+              <a class="texto-pequeño" href="./Login.html">Ya tienes cuenta? , inicia sesión</a>
+
+              <a class="texto-pequeño" href="./administration.html">Ingreso como administrador</a>
+            </div>
           </form>
         </div>
       </div>
@@ -36,6 +65,8 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </main>
+
+    <script src="./js/form.js" type="module"></script>
   </body>
 </html>

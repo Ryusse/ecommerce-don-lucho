@@ -6,6 +6,7 @@
 @import './components/footer.css';
 @import './components/formulario.css';
 @import './components/header.css';
+@import './components/loader.css';
 
 @import './views/about.css';
 @import './views/admin.css';

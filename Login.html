@@ -11,33 +11,37 @@
     <title>Ingresar</title>
   </head>
   <body>
-    <div class="login-container">
+    <div id="loader"></div>
+    <main class="login-container">
       <div class="login-column">
         <div class="login-content">
           <h2 class="login-title-form">Iniciar sesión</h2>
-          <form class="form" action="">
+          <form class="form" action="" id="form">
             <div class="form-control" id="email-control">
               <div class="form-control-input">
-                <input class="form-input" id="email" name="email" type="email" placeholder="Ingrese su email" required />
+                <input class="form-input" id="email" name="email" type="email" placeholder="Ingrese su email" />
                 <img class="form-error" src="./assets/iconos/error.svg" />
                 <img class="form-check" src="./assets/iconos/check.svg" />
               </div>
-              <small class="form-input-error">Campo requerido</small>
+              <small class="form-input-error">Formato incorrecto</small>
             </div>
 
             <div class="form-control" id="password-control">
               <div class="form-control-input">
-                <input class="form-input" id="password" name="password" type="password" placeholder="Ingrese su contraseña" required />
+                <input class="form-input" id="password" name="password" type="password" placeholder="Ingrese su contraseña" />
                 <img class="form-error" src="./assets/iconos/error.svg" />
                 <img class="form-check" src="./assets/iconos/check.svg" />
               </div>
-              <small class="form-input-error">Campo requerido</small>
+              <small class="form-input-error">Debe contener mayúsculas y almenos un número</small>
             </div>
 
-            <button class="button button-primary width-100" type="submit">Ingresar</button>
-            <a class="texto-pequeño" href="./Registro.html">Aun no tienes cuenta? , registrate</a>
+            <div class="form-button-container">
+              <button class="button button-primary width-100" type="submit">Ingresar</button>
+              <small class="form-submit-message">Rellene los campos</small>
+              <a class="texto-pequeño" href="./Registro.html">Aun no tienes cuenta? , registrate</a>
 
-            <a class="texto-pequeño" href="./administration.html">Ingreso como administrador</a>
+              <a class="texto-pequeño" href="./administration.html">Ingreso como administrador</a>
+            </div>
           </form>
         </div>
       </div>
@@ -51,8 +55,8 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </main>
 
-    <script src="./js/index.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
   </body>
 </html>
