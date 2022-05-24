@@ -12,8 +12,6 @@ export const loader = (estate) => {
   `
   } else {
     document.body.style.overflow = 'auto'
-
-    document.body.style.overflow = 'auto'
     document.getElementById('loader-container').remove()
   }
 }

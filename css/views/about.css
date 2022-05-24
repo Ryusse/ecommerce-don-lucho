@@ -33,21 +33,8 @@
   gap: 1.2rem;
 }
 
-.review-card {
-  max-width: 24rem;
-  margin: 9rem auto;
-}
-
-.review-image {
-  width: 6.25rem;
-  margin: auto;
-}
-
-.review-content {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.review-content p {
-  margin-top: 1rem;
+.reclamaciones-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

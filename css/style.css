@@ -4,13 +4,18 @@
 @import './components/button.css';
 @import './components/card.css';
 @import './components/footer.css';
-@import './components/formulario.css';
+@import './components/form.css';
 @import './components/header.css';
 @import './components/loader.css';
+@import './components/review-card.css';
+@import './components/slider.css';
+@import './components/tabs.css';
 
 @import './views/about.css';
 @import './views/admin.css';
+@import './views/book.css';
 @import './views/cart.css';
 @import './views/detail.css';
 @import './views/home.css';
 @import './views/login.css';
+@import './views/Entregable3.css';

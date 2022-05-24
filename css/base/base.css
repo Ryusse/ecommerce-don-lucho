@@ -7,8 +7,9 @@
   --grey-600: #adb1c4;
   --blue-900: #151875;
   --blue-800: #262a3f;
-  --blue-800-opacity: rgba(38, 42, 63, 0.8);
   --blue-700: #0d134e;
+
+  --blue-800-opacity: rgba(38, 42, 63, 0.8);
 
   --size-h1: 2.5rem;
   --size-h2: 2rem;
@@ -24,6 +25,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  list-style: none;
 }
 
 body {

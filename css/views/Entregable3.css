@@ -1,0 +1,48 @@
+.entregable-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 27rem;
+  padding-top: 3rem;
+  margin: auto;
+}
+
+.entregable-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+select {
+  width: 12.5rem;
+}
+
+.signo-form {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#contenedorSigno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  max-width: 30rem;
+  margin: 4rem auto;
+}
+
+#imagen {
+  width: 10rem;
+  padding: 1rem;
+}
+
+#imagen img {
+  object-fit: cover;
+  object-position: center;
+}
+
+#descripcion {
+  text-align: justify;
+}
