@@ -125,6 +125,10 @@ small {
   margin: auto;
 }
 
+.max-width-header {
+  padding: 2rem 5vw;
+}
+
 .section {
   padding: 6.25rem 0;
 }

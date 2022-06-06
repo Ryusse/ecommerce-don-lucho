@@ -1,27 +1,18 @@
-import {Regex} from './Regex.js'
-
-const loader = (estate) => {
-  if (estate) {
-    document.body.style.overflow = 'hidden'
-    document.getElementById('loader').innerHTML = `
-    <div id="loader-container">
-      <div class="loader-circle loader-circle-1"></div>
-      <div class="loader-circle loader-circle-2"></div>
-      <div class="loader-circle loader-circle-3"></div>
-      <div class="loader-circle loader-circle-4"></div>
-      <div class="loader-circle loader-circle-5"></div>
-    </div>
-  `
-  } else {
-    document.body.style.overflow = 'auto'
-    document.getElementById('loader-container').remove()
-  }
+export const Regex = {
+  hasJustNumber: /^[0-9]+$/,
+  fullName: /^[a-zA-ZÀ-ÿ,.'-\s]{8,40}$/,
+  password: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,16}$/,
+  email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 }
 
 const form = document.getElementById('form')
 const inputs = document.querySelectorAll('.form input')
 
 const fields = {
+  cantidad: false,
+  side1: false,
+  side2: false,
+  side3: false,
   email: false,
   password: false,
   fullname: false,
@@ -31,6 +22,20 @@ const validationForm = (e) => {
   switch (e.target.name) {
     case 'email':
       validationField(Regex.email, e.target, 'email')
+      break
+
+    case 'cantidad':
+      validationField(Regex.hasJustNumber, e.target, 'cantidad')
+      break
+
+    case 'side1':
+      validationField(Regex.hasJustNumber, e.target, 'side1')
+      break
+    case 'side2':
+      validationField(Regex.hasJustNumber, e.target, 'side2')
+      break
+    case 'side3':
+      validationField(Regex.hasJustNumber, e.target, 'side3')
       break
 
     case 'password':
@@ -86,70 +91,70 @@ inputs.forEach((input) => {
   input.addEventListener('blur', validationForm)
 })
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault()
-  const checkIcons = document.querySelectorAll('.form-control .form-check')
-  const errorIcons = document.querySelectorAll('.form-control .form-error')
-  const inputs = document.querySelectorAll('.form-control .form-input')
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault()
+//   const checkIcons = document.querySelectorAll('.form-control .form-check')
+//   const errorIcons = document.querySelectorAll('.form-control .form-error')
+//   const inputs = document.querySelectorAll('.form-control .form-input')
 
-  if (fields.email && fields.password) {
-    loader(true)
+//   if (fields.email && fields.password) {
+//     Loader(true)
 
-    setTimeout(() => {
-      loader(false)
-    }, 1000)
+//     setTimeout(() => {
+//       Loader(false)
+//     }, 1000)
 
-    inputs.forEach((input) => {
-      input.classList.remove('form-input-successful')
-    })
+//     inputs.forEach((input) => {
+//       input.classList.remove('form-input-successful')
+//     })
 
-    checkIcons.forEach((icon) => {
-      icon.classList.remove('form-status-enabled')
-    })
+//     checkIcons.forEach((icon) => {
+//       icon.classList.remove('form-status-enabled')
+//     })
 
-    document
-      .querySelector(`.form-input-error`)
-      .classList.remove('form-status-enabled')
-    form.reset()
-  } else {
-    loader(true)
+//     document
+//       .querySelector(`.form-input-error`)
+//       .classList.remove('form-status-enabled')
+//     form.reset()
+//   } else {
+//     Loader(true)
 
-    setTimeout(() => {
-      loader(false)
-    }, 1000)
+//     setTimeout(() => {
+//       Loader(false)
+//     }, 1000)
 
-    setTimeout(() => {
-      document
-        .querySelector('.form-submit-message')
-        .classList.add('form-status-enabled')
+//     setTimeout(() => {
+//       document
+//         .querySelector('.form-submit-message')
+//         .classList.add('form-status-enabled')
 
-      errorIcons.forEach((icon) => {
-        icon.classList.add('form-status-enabled')
-      })
+//       errorIcons.forEach((icon) => {
+//         icon.classList.add('form-status-enabled')
+//       })
 
-      checkIcons.forEach((icon) => {
-        icon.classList.remove('form-status-enabled')
-      })
+//       checkIcons.forEach((icon) => {
+//         icon.classList.remove('form-status-enabled')
+//       })
 
-      inputs.forEach((input) => {
-        input.classList.add('form-input-danger')
-      })
-    }, 1001)
+//       inputs.forEach((input) => {
+//         input.classList.add('form-input-danger')
+//       })
+//     }, 1001)
 
-    setTimeout(() => {
-      document
-        .querySelector('.form-submit-message')
-        .classList.remove('form-status-enabled')
-    }, 5000)
+//     setTimeout(() => {
+//       document
+//         .querySelector('.form-submit-message')
+//         .classList.remove('form-status-enabled')
+//     }, 5000)
 
-    errorIcons.forEach((icon) => {
-      icon.classList.remove('form-status-enabled')
-    })
+//     errorIcons.forEach((icon) => {
+//       icon.classList.remove('form-status-enabled')
+//     })
 
-    inputs.forEach((input) => {
-      input.classList.remove('form-input-danger')
-    })
+//     inputs.forEach((input) => {
+//       input.classList.remove('form-input-danger')
+//     })
 
-    form.reset()
-  }
-})
+//     form.reset()
+//   }
+// })
