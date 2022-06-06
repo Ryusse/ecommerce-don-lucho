@@ -139,7 +139,8 @@ function triangulo() {
       caracter = prompt('Ingrese UN caracter')
       if (caracter.length == 1) break
       alert('Ingrese UN carácter!!!')
-    } catch {}
+    } catch {
+    }
   }
 
   while (true) {
@@ -147,7 +148,8 @@ function triangulo() {
       niveles = parseInt(prompt('Ingrese cantidad de niveles'))
       if (niveles > 0) break
       alert('Ingrese un número entero mayor a cero!!!')
-    } catch {}
+    } catch {
+    }
   }
 
   for (var i = 0; i < niveles; i++) {

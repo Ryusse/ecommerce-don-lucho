@@ -1,5 +1,22 @@
-import { Regex } from './regex.js'
-import { loader } from './loader.js'
+import {Regex} from './Regex.js'
+
+const loader = (estate) => {
+  if (estate) {
+    document.body.style.overflow = 'hidden'
+    document.getElementById('loader').innerHTML = `
+    <div id="loader-container">
+      <div class="loader-circle loader-circle-1"></div>
+      <div class="loader-circle loader-circle-2"></div>
+      <div class="loader-circle loader-circle-3"></div>
+      <div class="loader-circle loader-circle-4"></div>
+      <div class="loader-circle loader-circle-5"></div>
+    </div>
+  `
+  } else {
+    document.body.style.overflow = 'auto'
+    document.getElementById('loader-container').remove()
+  }
+}
 
 const form = document.getElementById('form')
 const inputs = document.querySelectorAll('.form input')
@@ -28,18 +45,38 @@ const validationForm = (e) => {
 
 const validationField = (expression, input, field) => {
   if (expression.test(input.value)) {
-    document.querySelector(`#${field}-control .form-check`).classList.add('form-status-enabled')
-    document.querySelector(`#${field}-control .form-input`).classList.add('form-input-successful')
-    document.querySelector(`#${field}-control .form-input`).classList.remove('form-input-danger')
-    document.querySelector(`#${field}-control .form-input-error`).classList.remove('form-status-enabled')
-    document.querySelector(`#${field}-control .form-error`).classList.remove('form-status-enabled')
+    document
+      .querySelector(`#${field}-control .form-check`)
+      .classList.add('form-status-enabled')
+    document
+      .querySelector(`#${field}-control .form-input`)
+      .classList.add('form-input-successful')
+    document
+      .querySelector(`#${field}-control .form-input`)
+      .classList.remove('form-input-danger')
+    document
+      .querySelector(`#${field}-control .form-input-error`)
+      .classList.remove('form-status-enabled')
+    document
+      .querySelector(`#${field}-control .form-error`)
+      .classList.remove('form-status-enabled')
     fields[field] = true
   } else {
-    document.querySelector(`#${field}-control .form-input`).classList.add('form-input-danger')
-    document.querySelector(`#${field}-control .form-input`).classList.remove('form-input-successful')
-    document.querySelector(`#${field}-control .form-check`).classList.remove('form-status-enabled')
-    document.querySelector(`#${field}-control .form-input-error`).classList.add('form-status-enabled')
-    document.querySelector(`#${field}-control .form-error`).classList.add('form-status-enabled')
+    document
+      .querySelector(`#${field}-control .form-input`)
+      .classList.add('form-input-danger')
+    document
+      .querySelector(`#${field}-control .form-input`)
+      .classList.remove('form-input-successful')
+    document
+      .querySelector(`#${field}-control .form-check`)
+      .classList.remove('form-status-enabled')
+    document
+      .querySelector(`#${field}-control .form-input-error`)
+      .classList.add('form-status-enabled')
+    document
+      .querySelector(`#${field}-control .form-error`)
+      .classList.add('form-status-enabled')
     fields[field] = false
   }
 }
@@ -70,7 +107,9 @@ form.addEventListener('submit', (e) => {
       icon.classList.remove('form-status-enabled')
     })
 
-    document.querySelector(`.form-input-error`).classList.remove('form-status-enabled')
+    document
+      .querySelector(`.form-input-error`)
+      .classList.remove('form-status-enabled')
     form.reset()
   } else {
     loader(true)
@@ -80,7 +119,9 @@ form.addEventListener('submit', (e) => {
     }, 1000)
 
     setTimeout(() => {
-      document.querySelector('.form-submit-message').classList.add('form-status-enabled')
+      document
+        .querySelector('.form-submit-message')
+        .classList.add('form-status-enabled')
 
       errorIcons.forEach((icon) => {
         icon.classList.add('form-status-enabled')
@@ -96,7 +137,9 @@ form.addEventListener('submit', (e) => {
     }, 1001)
 
     setTimeout(() => {
-      document.querySelector('.form-submit-message').classList.remove('form-status-enabled')
+      document
+        .querySelector('.form-submit-message')
+        .classList.remove('form-status-enabled')
     }, 5000)
 
     errorIcons.forEach((icon) => {
