@@ -1,4 +1,7 @@
-export const Regex = {
+import { Loader } from './Loader.js'
+
+const Regex = {
+  hasRealNumber: /^(?:[1-9]\d{0,2}(?:,\d{3})*|0)(?:\.\d+)?$/,
   hasJustNumber: /^[0-9]+$/,
   fullName: /^[a-zA-ZÀ-ÿ,.'-\s]{8,40}$/,
   password: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,16}$/,
@@ -22,6 +25,26 @@ const validationForm = (e) => {
   switch (e.target.name) {
     case 'email':
       validationField(Regex.email, e.target, 'email')
+      break
+
+    case 'nro1':
+      validationField(Regex.hasJustNumber, e.target, 'nro1')
+      break
+
+    case 'nro2':
+      validationField(Regex.hasJustNumber, e.target, 'nro2')
+      break
+
+    case 'nro3':
+      validationField(Regex.hasJustNumber, e.target, 'nro3')
+      break
+
+    case 'montoCompra':
+      validationField(Regex.hasRealNumber, e.target, 'montoCompra')
+      break
+
+    case 'meses':
+      validationField(Regex.hasJustNumber, e.target, 'meses')
       break
 
     case 'cantidad':
